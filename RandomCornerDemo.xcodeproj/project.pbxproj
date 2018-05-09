@@ -15,7 +15,7 @@
 		2284592A20A29E960023F82C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284592920A29E960023F82C /* main.m */; };
 		2284593420A29E960023F82C /* RandomCornerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284593320A29E960023F82C /* RandomCornerDemoTests.m */; };
 		2284593F20A29E960023F82C /* RandomCornerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284593E20A29E960023F82C /* RandomCornerDemoUITests.m */; };
-		2284594E20A2A1300023F82C /* FrameCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284594D20A2A1300023F82C /* FrameCustomView.m */; };
+		2284594E20A2A1300023F82C /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284594D20A2A1300023F82C /* CustomView.m */; };
 		2284595420A2A4A60023F82C /* UIView+RandomCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284595320A2A4A60023F82C /* UIView+RandomCorner.m */; };
 		2284595720A2C40C0023F82C /* MasonryCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284595620A2C40C0023F82C /* MasonryCustomView.m */; };
 		8C2BC9D4DAAE98B829173504 /* libPods-RandomCornerDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 713FA971B4D9FDE8000A1293 /* libPods-RandomCornerDemoUITests.a */; };
@@ -58,8 +58,8 @@
 		2284593A20A29E960023F82C /* RandomCornerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomCornerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2284593E20A29E960023F82C /* RandomCornerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomCornerDemoUITests.m; sourceTree = "<group>"; };
 		2284594020A29E960023F82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2284594C20A2A1300023F82C /* FrameCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameCustomView.h; sourceTree = "<group>"; };
-		2284594D20A2A1300023F82C /* FrameCustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameCustomView.m; sourceTree = "<group>"; };
+		2284594C20A2A1300023F82C /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		2284594D20A2A1300023F82C /* CustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		2284595220A2A4A60023F82C /* UIView+RandomCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+RandomCorner.h"; sourceTree = "<group>"; };
 		2284595320A2A4A60023F82C /* UIView+RandomCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+RandomCorner.m"; sourceTree = "<group>"; };
 		2284595520A2C40C0023F82C /* MasonryCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryCustomView.h; sourceTree = "<group>"; };
@@ -131,8 +131,8 @@
 				2284591B20A29E8A0023F82C /* AppDelegate.m */,
 				2284591D20A29E8A0023F82C /* ViewController.h */,
 				2284591E20A29E8A0023F82C /* ViewController.m */,
-				2284594C20A2A1300023F82C /* FrameCustomView.h */,
-				2284594D20A2A1300023F82C /* FrameCustomView.m */,
+				2284594C20A2A1300023F82C /* CustomView.h */,
+				2284594D20A2A1300023F82C /* CustomView.m */,
 				2284595520A2C40C0023F82C /* MasonryCustomView.h */,
 				2284595620A2C40C0023F82C /* MasonryCustomView.m */,
 				2284595220A2A4A60023F82C /* UIView+RandomCorner.h */,
@@ -475,7 +475,7 @@
 			files = (
 				2284591F20A29E8A0023F82C /* ViewController.m in Sources */,
 				2284595720A2C40C0023F82C /* MasonryCustomView.m in Sources */,
-				2284594E20A2A1300023F82C /* FrameCustomView.m in Sources */,
+				2284594E20A2A1300023F82C /* CustomView.m in Sources */,
 				2284592A20A29E960023F82C /* main.m in Sources */,
 				2284595420A2A4A60023F82C /* UIView+RandomCorner.m in Sources */,
 				2284591C20A29E8A0023F82C /* AppDelegate.m in Sources */,

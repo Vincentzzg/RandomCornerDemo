@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 #import "Masonry.h"
-#import "FrameCustomView.h"
+#import "CustomView.h"
 #import "MasonryCustomView.h"
 
 #import "UIView+RandomCorner.h"
@@ -24,16 +24,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //直接设置frame使用固定布局的view，设置完frame后就可以设置圆角
+    //如果是自定义视图，可以直接在initWithFrame方法中进行设置
     
     //能正常生产圆角
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 200, 100)];
+    UIView *view = [[UIView alloc] init];//
+    view.frame = CGRectMake(50, 50, 200, 100);
     view.backgroundColor = [UIColor redColor];
     [self.view addSubview:view];
     
-    [view setCorners:UIRectCornerTopRight | UIRectCornerBottomRight cornerRadii:CGSizeMake(20, 20)];
-    
-    //自定义视图，画圆角的操作封装在视图内部的initWithFrame方法中
-    FrameCustomView *frameCustomView = [[FrameCustomView alloc] initWithFrame:CGRectMake(50, 170, 200, 100)];
+    [view setCorners:UIRectCornerTopRight cornerRadii:CGSizeMake(20, 20)];
+
+    //自定义视图，可以把画圆角的操作封装在视图内部的initWithFrame方法中
+    CustomView *frameCustomView = [[CustomView alloc] init];
+    frameCustomView.frame = CGRectMake(50, 170, 200, 100);
     frameCustomView.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:frameCustomView];
     
@@ -65,13 +69,13 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    //这里加了这句之后就看不到masonryView了
+    //这里视图布局还没有完成，masonryView的frame还是（0，0，0，0），加了这句之后就看不到masonryView了
 //    [self.masonryView setCorners:UIRectCornerTopRight | UIRectCornerBottomRight cornerRadii:CGSizeMake(20, 20)];
 }
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-    //加在这里是OK的
+    //加在这里是OK的，而且这之后都是ok的
     [self.masonryView setCorners:UIRectCornerTopRight | UIRectCornerBottomRight cornerRadii:CGSizeMake(20, 20)];
 }
 

@@ -1,5 +1,5 @@
 //
-//  FrameCustomView.h
+//  CustomView.h
 //  RandomCornerDemo
 //
 //  Created by zzg on 2018/5/9.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FrameCustomView : UIView
+@interface CustomView : UIView
 
 @end
