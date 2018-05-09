@@ -1,7 +1,7 @@
 # RandomCornerDemo
 ## 给视图指定角添加圆角    
-测试不同布局（绝对布局、相对布局）情况下使用UIBezierPath类的bezierPathWithRoundedRect:byRoundingCorners:cornerRadii方法给视图指定角添加圆角的效果：  
-**设置原则**--不管什么布局方式，必须在能拿到View的frame（bounds）大小的时候设置才有用，如果在frame还没有的情况下设置，视图展示出来是看不到的  
+测试不同布局（绝对布局、相对布局）情况下使用UIBezierPath类的bezierPathWithRoundedRect:byRoundingCorners:cornerRadii方法给视图指定角添加圆角的效果，得到结论：
+**设置原则**--不管什么布局方式，必须在能拿到View的frame（bounds）大小的时候设置才有用，如果在frame还没有的情况下设置，视图展示出来是看不到的  
 ### ViewController中：
 1.绝对布局：设置完frame后就可以设置视图的圆角
 2.相对布局：添加到VC的主视图self.view中的子视图设置圆角的地方：viewDidLayoutSubviews/viewDidAppear方法中，此时视图布局已经完成，视图的frame已经有值，可以正常设置圆角
